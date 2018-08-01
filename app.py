@@ -159,4 +159,6 @@ def get_weather_data(req):
 
 
 if __name__ == "main":
-        app.run(debug=False, port=port, host="0.0.0.0")
+    port = int(os.getenv("PORT", 8080))
+    print("Starting app on port %d" % port)
+    app.run(debug=False, port=port, host="0.0.0.0")
