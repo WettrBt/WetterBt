@@ -158,7 +158,7 @@ def get_weather_data(req):
                 
 
 
-if __Name__ == "main":
+if __name__ == "main":
     port = int(os.getenv("PORT", 5000))
 
     print("Starting app on port %d" % port)
